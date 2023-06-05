@@ -103,6 +103,7 @@ impl JobApi {
                             GetQueryResultsParameters {
                                 page_token,
                                 max_results: page_size,
+                                timeout_ms:  Some(120 * 1000),
                                 ..Default::default()
                             },
                         )
